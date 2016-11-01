@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>KS Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KS Bank</h1>
+      <p>Welcome to KS Bank!</p>
+      <div class="row">
+        <form class="manageAccounts">
+          <label for="actions">Actions</label>
+          <select id="actions" class="form-control">
+            <option>Deposit</option>
+            <option>Transfer</option>
+            <option>Withdraw</option>
+            <option>Delete Account<option>
+          </select>
+          <button type="submit" name="submit" id="actionButton">Select</button>
+        </form>
+          <p><span class="output">OUTPUT: </span></p>
+          <div class="addAccount">
+            <h3>Add Account</h3>
+            <form id="newAccount">
+              <div class="form-group">
+                <label for="accountName">Account Name</label>
+                <input class="form-control" type="text" id="accountName" placeholder="Enter your name"></input>
+              </div>
+              <div class="form-group">
+                <label for="password">Initial Deposit</label>
+                <input class="form-control" type="text" id="" placeholder="Password"></input>
+              </div>
+              <div class="form-group">
+                <label for="deposit">Type</label>
+                <select id="actions" class="form-control">
+                  <option>Savings</option>
+                  <option>Checking</option>
+                </select>
+              </div>
+              <button type="submit" name="button">Add Account</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

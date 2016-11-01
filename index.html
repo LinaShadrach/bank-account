@@ -10,29 +10,82 @@
   </head>
   <body>
     <div class="container">
-      <h1>KS Bank</h1>
-      <p>Welcome to KS Bank!</p>
+      <div class="main-page row">
+        <h1>KS Bank</h1>
+        <p>Welcome to KS Bank!</p>
+        <!-- sign up form -->
+        <form id="userInfo">
+          <div class="form-group">
+            <label for="clientName">Name</label>
+            <input class="form-control" type="text" id="clientName" placeholder="Enter your name"></input>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="text" id="password" placeholder="Password"></input>
+          </div>
+          <div class="form-group">
+            <label for="accountName">Account Name</label>
+            <input class="form-control" type="text" id="accountName" placeholder="Account name"></input>
+          </div>
+          <div class="form-group">
+            <label for="initialDeposit">Initial Deposit</label>
+            <input class="form-control" type="text" id="initialDeposit" placeholder="0"></input>
+          </div>
+          <div class="form-group">
+            <label for="accountType">Type</label>
+            <select id="accountType" class="form-control">
+              <option>Savings</option>
+              <option>Checking</option>
+            </select>
+          </div>
+          <button class="btn btn-default" type="submit" name="button">Sign Up</button>
+        </form>
+      </div>
+      <!-- ManageAccounts -->
+      <div class="manageAcc row">
+        <h1>KS Bank</h1>
+        <p>Epicodus' Premier Bank!</p>
+        <h2>Manage Accounts</h2>
+          <!-- Display current acount info -->
+          <h4>Your Account</h4>
+          <p>Name: <span id="accountNameDisplay"></span></p>
+          <p>Account Type: <span id="accountTypeDisplay"></span></p>
+          <p>Balance: <span id="accountBalanceDisplay"></span></p>
+        <!-- Additional actions -->
 
-      <form id="userInfo">
-        <div class="form-group">
-          <label for="clientName">Name</label>
-          <input class="form-control" type="text" id="clientName" placeholder="Enter your name"></input>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input class="form-control" type="text" id="password" placeholder="Password"></input>
-        </div>
-        <div class="form-group">
-          <label for="deposit">Initial Deposit</label>
-          <input class="form-control" type="text" id="deposit" placeholder="0"></input>
-        </div>
-        <button type="submit" name="button">Sign Up</button>
-      </form>
-
-      <div id="clientInfo">
-        <p>Name: <span id=nameDisplay></span></p>
-        <ul id="accounts">
-        </ul>
+            <label for="depDraw">Amount</label>
+            <input id="depDraw" placeholder="Amount">
+            <button id="deposit">Deposit</button>
+            <button id="withdraw">Withdraw</button>
+            <!-- <label for="actions">Actions</label>
+            <select id="actions" class="form-control">
+              <option>Deposit</option>
+              <option>Transfer</option>
+              <option>Withdraw</option>
+              <option>Delete Account<option>
+            </select>
+            <button type="submit" name="submit" id="actionButton">Select</button> -->
+            <div class="addAccount">
+              <h3>Add Account</h3>
+              <form id="newAccount">
+                <div class="form-group">
+                  <label for="accountName">Account Name</label>
+                  <input class="form-control" type="text" id="accountName2" placeholder="Enter your name"></input>
+                </div>
+                <div class="form-group">
+                  <label for="password">Initial Deposit</label>
+                  <input class="form-control" type="text" id="initialDeposit2" placeholder="0"></input>
+                </div>
+                <div class="form-group">
+                  <label for="deposit">Type</label>
+                  <select id="accountType2" class="form-control">
+                    <option>Savings</option>
+                    <option>Checking</option>
+                  </select>
+                </div>
+                <button type="submit" name="button">Add Account</button>
+              </form>
+            </div>
       </div>
     </div>
   </body>
