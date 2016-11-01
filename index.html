@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>KS Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>KS Bank</h1>
+      <p>Welcome to KS Bank!</p>
+
+      <form id="userInfo">
+        <div class="form-group">
+          <label for="clientName">Name</label>
+          <input class="form-control" type="text" id="clientName" placeholder="Enter your name"></input>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" type="text" id="password" placeholder="Password"></input>
+        </div>
+        <div class="form-group">
+          <label for="deposit">Initial Deposit</label>
+          <input class="form-control" type="text" id="deposit" placeholder="0"></input>
+        </div>
+        <button type="submit" name="button">Sign Up</button>
+      </form>
+
+      <div id="clientInfo">
+        <p>Name: <span id=nameDisplay></span></p>
+        <ul id="accounts">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
